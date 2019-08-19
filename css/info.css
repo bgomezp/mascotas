@@ -1,0 +1,32 @@
+#info {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info-pet {
+    margin: 20px;
+}
+.info-pet img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+/* mostara dos columnas 40% cuando sea mayor de 480 pixels */
+@media (min-width:480px) {
+    .info-pet {
+        width: 40%;
+    }
+}
+/* mostyara automaticmanete las imagens cuando se escitorio */
+@media (min-width:1024px) {
+    .info-pet {
+        width: auto;
+    }
+}
